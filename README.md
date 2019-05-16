@@ -6,7 +6,7 @@ Procure reproduzir o modelo da forma mais similar que conseguir. É necessário 
 
 No modelo constam quatro opções, é necessário que ao clicar sobre uma das opções abra um texto descritivo (fictício) para identificar a opção.
 
-Não há definição de prazo para entrega do projeto. Ao conluir o projeto o desenvolvedor poderá nos enviar caminho para o repositório onde consta seu projeto ou enviar arquivo com o projeot compactado por e-mail para aliberto@nucleogov.com.br.
+Consideraremos como prazo para entrega do projeto o perído de 30 dias após envio do repositório. Após este período consideraremos a desistência do candidato em concretizar esse projeto. Ao conluir o projeto o desenvolvedor poderá nos enviar caminho para o repositório onde consta seu projeto ou enviar arquivo com o projeot compactado por e-mail para aliberto@nucleogov.com.br.
 
 Outras funcionalidades e efeitos visuais podem ser adicionadas à página, como criação de Back End, hover, etc. A inclusão de funcionalidades, além do descrito acima é opcional.
 
