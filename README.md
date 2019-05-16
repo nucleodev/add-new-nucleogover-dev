@@ -1,4 +1,4 @@
-###Desenvolver página Web seguindo o modelo disposto neste repositório.
+### Desenvolver página Web seguindo o modelo disposto neste repositório.
 
 O objetivo da atividade é conhecer a qualidade técnica dos candidatos. Procure reproduzir o modelo da forma mais similar que conseguir.
 
