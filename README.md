@@ -1,10 +1,13 @@
 ### Desenvolver página Web seguindo o modelo disposto neste repositório.
 
-O objetivo da atividade é conhecer a qualidade técnica dos candidatos. Procure reproduzir o modelo da forma mais similar que conseguir.
+O objetivo da atividade é conhecer a qualidade técnica dos candidatos. Conhecer sua critividade, organização e um pouco do conhecimento no desenvolvimento de Front End. O desenvolvimento da atividade é opcional e não será remunerado.
 
-É necessário que o wireframe do projeto se mantenha idêntico.
-
-Imagens, textos, fontes e cores da página podem ser modificados conforme critérios e necessidades do desenvolvedor.
+Procure reproduzir o modelo da forma mais similar que conseguir. É necessário que o wireframe do projeto se mantenha idêntico. Mas imagens, textos, fontes e cores da página podem ser modificados conforme critérios e necessidades do desenvolvedor.
 
 No modelo constam quatro opções, é necessário que ao clicar sobre uma das opções abra um texto descritivo (fictício) para identificar a opção.
+
+Outras funcionalidades e efeitos visuais podem ser adicionadas à página, se o desenvolvedor desejar.
+
+Não há definição de prazo para entrega do projeto. Ao conluir o projeto o desenvolvedor poderá nos enviar caminho para o repositório onde consta seu projeto ou enviar arquivo com o projeot compactado por e-mail para aliberto@nucleogov.com.br.
+
 
