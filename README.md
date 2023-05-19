@@ -1,14 +1,17 @@
-### Desenvolver página Web seguindo o modelo disposto neste repositório.
+# Testes para novos NúcloGovers
+### Teste de lógica condicional - Sequência de Fibonacci usando PHP
 
-O objetivo da atividade é conhecer a qualidade técnica dos candidatos. Conhecer sua criatividade, organização e um pouco do conhecimento no desenvolvimento de Front End. O desenvolvimento da atividade é opcional e não será remunerado.
+**Descrição:**
+Neste teste, você será desafiado a criar um script em PHP capaz de imprimir a sequência de Fibonacci. A sequência de Fibonacci é uma série de números em que cada número é a soma dos dois números anteriores. Por exemplo, a sequência começa com 0 e 1, e os próximos números são calculados somando os dois números anteriores: 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
 
-Procure reproduzir o modelo da forma mais similar que conseguir. É necessário que o wireframe do projeto se mantenha idêntico. Mas imagens, textos, fontes e cores da página podem ser modificados conforme critérios e necessidades do desenvolvedor. Sugerimos a utilização de outras cores, à caráter do desenvolvedor.
+**Instruções:**
+Escreva um script em PHP que receba um número inteiro positivo como entrada, calcule e devolva o número presente na sequência Fibonacci para a posição informada. O script deve ser capaz de lidar com números grandes, evitando erros de overflow.
 
-No modelo constam quatro opções, é necessário que ao clicar sobre uma das opções abra um texto descritivo (fictício) para identificar a opção.
+**Critérios de Avaliação:**
+* O script deve estar escrito em PHP.
+* O script deve receber um número inteiro positivo como entrada.
+* O script deve calcular e imprimir corretamente o número da sequência Fibonacci para a posição inserida
+* O script deve lidar adequadamente com números grandes, evitando erros de overflow.
+* A solução deve ser eficiente e não deve causar lentidão excessiva para números grandes.
 
-Consideraremos como prazo para entrega do projeto o perído de 30 dias após envio do repositório. Após este período consideraremos a desistência do candidato em concretizar esse projeto. Ao conluir o projeto o desenvolvedor poderá nos enviar caminho para o repositório onde consta seu projeto ou enviar arquivo com o projeto compactado por e-mail para talentos@nucleogov.com.br.
-
-Outras funcionalidades e efeitos visuais podem ser adicionadas à página, como criação de Back End, hover, etc. A inclusão de funcionalidades, além do descrito acima é opcional.
-
-
-
+Dica: Você pode utilizar loops, recursão ou qualquer outra abordagem que preferir para calcular a sequência de Fibonacci. Lembre-se de testar sua solução com diferentes valores de entrada para garantir seu funcionamento e eficiência.
