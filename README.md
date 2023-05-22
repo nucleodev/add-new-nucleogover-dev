@@ -1,5 +1,5 @@
 # Testes para novos NúcleoGovers
-## Teste 01: Lógica Condicional - Sequência de Fibonacci usando PHP
+# Teste 01: Lógica Condicional - Sequência de Fibonacci usando PHP
 
 **Descrição:**
 Neste teste, você será desafiado a criar um script em PHP capaz de imprimir a sequência de Fibonacci. A sequência de Fibonacci é uma série de números em que cada número é a soma dos dois números anteriores. Por exemplo, a sequência começa com 0 e 1, e os próximos números são calculados somando os dois números anteriores: 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
@@ -40,4 +40,4 @@ No front-end, os cards de matérias devem exibir:
 ## Diferenciais para o teste
 - O bloco ter suporte à shortcode usando a função `do_shortcode();` (opcional)
 - Criar a single de leitura dos posts. (opcional)
-- Seguir o modelo sugerido, presente no arquivo modelo.pdf
+- Seguir o modelo sugerido, presente no arquivo modelo do repositório
