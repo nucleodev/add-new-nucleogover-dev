@@ -1,0 +1,109 @@
+# Translation of Plugins - PostX – Gutenberg Post Grid Blocks - Stable (latest release) in Portuguese (Brazil)
+# This file is distributed under the same license as the Plugins - PostX – Gutenberg Post Grid Blocks - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-05-04 04:56:08+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: pt_BR\n"
+"Project-Id-Version: Plugins - PostX – Gutenberg Post Grid Blocks - Stable (latest release)\n"
+
+#: classes/options/Tutorials.php:66
+msgid "How to use Meta"
+msgstr "Como usar o Meta"
+
+#: classes/options/Getting_Started.php:13
+msgid "Plugin Details"
+msgstr "Detalhes do plugin"
+
+#: classes/options/Settings.php:48
+msgid "General Settings"
+msgstr "Configurações gerais"
+
+#: classes/Options.php:97 classes/Options.php:98 classes/Options.php:233
+msgid "Getting Started"
+msgstr "Primeiros passos"
+
+#. Author of the plugin
+msgid "wpxpo"
+msgstr "wpxpo"
+
+#: classes/options/Getting_Started.php:122
+msgid "Changelog"
+msgstr "Histórico de alterações"
+
+#: addons/builder/Builder.php:126 classes/options/Settings.php:72
+msgid "Container Width"
+msgstr "Largura do contêiner"
+
+#: classes/options/Settings.php:68
+msgid "Select Preloader Style."
+msgstr "Selecione o estilo pré-carregado."
+
+#: classes/options/Settings.php:65
+msgid "Preloader Style 2"
+msgstr "Estilo pré-carregado 2"
+
+#: classes/options/Settings.php:64
+msgid "Preloader Style 1"
+msgstr "Estilo pré-carregado 1"
+
+#: classes/options/Settings.php:62
+msgid "Preloader Style"
+msgstr "Estilo pré-carregado"
+
+#: classes/options/Settings.php:58
+msgid "Select where you want to save CSS."
+msgstr "Selecione onde você deseja salvar o CSS."
+
+#: classes/Styles.php:183 classes/Styles.php:252
+msgid "CSS can not be saved due to permission!!!"
+msgstr "CSS não pode ser salvo devido às permissões!!!"
+
+#: classes/Styles.php:187 classes/Styles.php:204
+msgid "Data not found!!"
+msgstr "Dados não encontrados!!"
+
+#: classes/Styles.php:185 classes/Styles.php:202
+msgid "Data retrive done"
+msgstr "Recuperação de dados feita"
+
+#: classes/Functions.php:1243 classes/Functions.php:1509
+#: assets/js/editor.blocks.js:2
+msgid "Next"
+msgstr "Seguinte"
+
+#: classes/Functions.php:1242 classes/Functions.php:1504
+#: assets/js/editor.blocks.js:2
+msgid "Previous"
+msgstr "Anteriores"
+
+#: blocks/template/meta.php:41 blocks/template/meta.php:42
+msgid " ago"
+msgstr " atrás"
+
+#: blocks/template/meta.php:39
+msgid " views"
+msgstr " visitas"
+
+#: blocks/template/meta.php:37 assets/js/editor.blocks.js:2
+msgid " comments"
+msgstr " comentários"
+
+#: blocks/template/meta.php:22 blocks/template/meta.php:23
+msgid "By"
+msgstr "Por"
+
+#: blocks/Post_Grid_1.php:3117 blocks/Post_Grid_2.php:2962
+#: blocks/Post_Grid_3.php:3006 blocks/Post_Grid_4.php:2923
+#: blocks/Post_Grid_5.php:2926 blocks/Post_Grid_6.php:2947
+#: blocks/Post_Grid_7.php:2937 blocks/Post_List_1.php:3365
+#: blocks/Post_List_2.php:3319 blocks/Post_List_3.php:3338
+#: blocks/Post_List_4.php:3320 blocks/Post_Module_1.php:3236
+#: blocks/Post_Module_2.php:3255 blocks/Post_Slider_1.php:2644
+#: blocks/Post_Slider_2.php:3221 assets/js/editor.blocks.js:2
+msgid "Read More"
+msgstr "Leia mais"
