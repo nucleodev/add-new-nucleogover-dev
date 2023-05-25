@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Sequência de Fibonacci</title>
-</head>
-<body>
-    <h1>Sequência de Fibonacci</h1>
 
-    <form method="get" action="index.php">
-        <label for="posicao">Informe a posição:</label>
-        <input type="number" name="posicao" id="posicao" required>
-        <button type="submit">Calcular</button>
-    </form>
-
-    <?php if (isset($resultado)) : ?>
-        <p>O número na posição <?= $posicao ?> da sequência de Fibonacci é: <?= $resultado ?></p>
-    <?php endif; ?>
-</body>
-</html>
 
 <?php
 // Aqui eu estou verificando se o usuário digitou algum número
@@ -42,3 +24,22 @@ if (isset($_GET['posicao'])) {
 }
 ?>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sequência de Fibonacci</title>
+</head>
+<body>
+    <h1>Sequência de Fibonacci</h1>
+
+    <form method="get" action="index.php">
+        <label for="posicao">Informe a posição:</label>
+        <input type="number" name="posicao" id="posicao" required>
+        <button type="submit">Calcular</button>
+    </form>
+
+    <?php if (isset($resultado)) : ?>
+        <p>O número na posição <?= $posicao ?> da sequência de Fibonacci é: <?= $resultado ?></p>
+    <?php endif; ?>
+</body>
+</html>
