@@ -4,6 +4,11 @@ Author: Yago Prado
 Version: 1.4
  */
 
+@font-face {
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+    font-family: 'Roboto', sans-serif;
+}
+
 *{
     padding: 0;
     margin: 0;
