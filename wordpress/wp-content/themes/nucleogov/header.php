@@ -1,0 +1,1 @@
+<h1 style="background: #0A246A" align="center">Hora News!</h1>
