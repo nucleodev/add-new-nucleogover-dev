@@ -1,7 +1,7 @@
 <footer class="site-footer">
-    <p><?php bloginfo( 'name' ) ?></p>
+    <p class="copyright">Copyright Hora News Notícias</p>
 </footer>
-</div>
+
 
 <?php wp_footer() ?>
 </body>
