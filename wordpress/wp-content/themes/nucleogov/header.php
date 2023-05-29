@@ -17,8 +17,8 @@
     </div>
     <div class="header-main-title">
         <div class="container">
-                <h1 class="header-title"><a href="<?php echo home_url(); ?>">HORA NEWS</a></h1>
-                <h2 class="header-subtitle"><a href="<?php echo home_url(); ?>">NOTÍCIAS</a></h2>
+            <h1 class="header-title"><a href="<?php echo home_url(); ?>">HORA NEWS</a></h1>
+            <h2 class="header-subtitle"><a href="<?php echo home_url(); ?>">NOTÍCIAS</a></h2>
         </div>
     </div>
 </header>
