@@ -10,15 +10,18 @@
 <body <?php body_class(); ?>>
 
 <header class="site-header">
+
     <div class="header-bar">
         <div class="container">
-            <p class="header-bar-nav">PAGINA INICIAL</p>
+            <span class="header-bar-nav"><a href="<?php echo home_url(); ?>">PAGINA INICIAL</a></span>
         </div>
     </div>
-    <div class="header-main-title">
-        <div class="container">
+
+    <div class="container">
+        <div class="header-main-title">
             <h1 class="header-title"><a href="<?php echo home_url(); ?>">HORA NEWS</a></h1>
             <h2 class="header-subtitle"><a href="<?php echo home_url(); ?>">NOTÍCIAS</a></h2>
         </div>
     </div>
+
 </header>

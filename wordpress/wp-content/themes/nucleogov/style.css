@@ -1,19 +1,22 @@
 /*
 Theme Name: NucleoGov Capacidade tecnica
 Author: Yago Prado
-Version: 1.4
+Version: 1.6.1
  */
 
 @font-face {
     src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
     font-family: 'Roboto', sans-serif;
 }
+
 :root{
     --color-background: #F5F5F5;
-    --color-background-primary: #0B2A7A;
-    --color-background-secondary: #001A5B;
+    --color-background-primary: #001A5B;
+    --color-background-secondary: #0B2A7A;
     --color-text-primary: white;
+    --color-text-hover: #FFD700;
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -33,41 +36,74 @@ body {
 .container {
     display: flex;
     width: 100%;
-    max-width: 1195px;
+    max-width: 1595px;
     margin: 0 auto;
 }
 
-footer, header, body, .container, .header-main-title, .header-bar{
+footer,
+header,
+body,
+.container,
+.header-main-title,
+.header-bar,
+.footer-copyright,
+.site-main{
     display: flex;
     flex-direction: column;
 }
 
-.header-title, .header-subtitle, .copyright, .header-bar-nav{
+.header-title,
+.header-subtitle,
+.copyright,
+.header-bar-nav{
     color: var(--color-text-primary);
 }
 
-.header-bar, .site-footer{
-    background-color: var( --color-background-secondary);
+.header-bar,
+.site-footer{
+    background-color: var( --color-background-primary);
 
-}
-
-.site-header, .header-bar, .site-footer {
-    width: 100%;
 }
 
 .site-header{
-    background-color: var( --color-background-primary);
+    background-color: var( --color-background-secondary);
 }
 
+.header-main-title,
+.footer-copyright{
+        align-items: center;
+        justify-content: center;
+}
+.site-header,
+.header-bar,
+.site-footer {
+    width: 100%;
+}
+
+.header-bar-nav,
+.copyright{
+    font-size: 14px;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.header-bar-nav:hover,
+.copyright:hover {
+    color: #FFD700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+}
+
+
 .header-main-title {
-    justify-content: center;
-    height: 150px;
-    align-items: center;
+    margin: 20px;
+
 }
 
 .header-title{
     font-size: 55px;
 }
+
 .header-subtitle{
     font-weight: lighter;
 }

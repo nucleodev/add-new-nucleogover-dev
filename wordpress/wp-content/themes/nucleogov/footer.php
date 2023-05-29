@@ -1,5 +1,9 @@
 <footer class="site-footer">
-    <p class="copyright">Copyright Hora News Notícias</p>
+    <div class="container">
+        <div class="footer-copyright">
+            <span class="copyright"><a href="<?php echo home_url(); ?>">Copyright Hora News Notícias</a></span>
+        </div>
+    </div>
 </footer>
 
 
