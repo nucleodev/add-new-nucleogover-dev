@@ -10,7 +10,6 @@
 <body <?php body_class(); ?>>
 
 <header class="site-header">
-
     <div class="header-bar">
         <div class="container">
             <span class="header-bar-nav"><a href="<?php echo home_url(); ?>">PAGINA INICIAL</a></span>
