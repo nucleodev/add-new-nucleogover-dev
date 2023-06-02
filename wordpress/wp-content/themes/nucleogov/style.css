@@ -1,7 +1,7 @@
 /*
 Theme Name: NucleoGov Capacidade tecnica
 Author: Yago Prado
-Version: 1.9
+Version: 1.6.1
  */
 
 @font-face {
@@ -36,7 +36,7 @@ body {
 .container {
     display: flex;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1195px;
     margin: 0 auto;
 }
 
@@ -49,9 +49,12 @@ body,
 .footer-copyright,
 .site-main,
 .error-page,
-.posts {
+.posts,
+.post-news{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 .header-title,
@@ -149,5 +152,43 @@ body,
 svg {
     width: 44px;
 }
+.error-page{
+    margin: 263px 0;
+}
+.post-thumb{
 
 
+}
+.posts-recent{
+    display: flex;
+    gap: 25px;
+}
+
+.post-news{
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 2px #00000057;
+}
+.post-thumb{
+    display: flex;
+}
+
+.post-desc{
+    background: white;
+    padding: 20px;
+    height: 160px;
+}
+
+.date-wrapper{
+    padding-bottom: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+}
+
+.titulo-wrapper{
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
