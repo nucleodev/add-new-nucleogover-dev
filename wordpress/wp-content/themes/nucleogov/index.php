@@ -1,6 +1,6 @@
 <?php
-// Template Name: noticias
 get_header(); ?>
+
 <main class="site-main">
     <div class="container">
         <div class="posts">
@@ -34,13 +34,19 @@ get_header(); ?>
                 </a>
             </div>
             <div class="posts-recent">
+                <?php
+                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // pagina atual
+                $args = array(
+                    'post_type' => 'post',
+                    'paged' => $paged
+                );// Define os argumentos da consulta para buscar posts e usar a pagina atual definida acima
 
-                <?php if (have_posts()): while (have_posts()):
-                    the_post(); ?>
-                    <?php
-                    $thumbnail = get_the_post_thumbnail(); // Obtém a URL da thumbnail do post
-                    $data = get_the_date('d M Y'); // Obtém a data do post
-                    $titulo = get_the_title(); // Obtém o título do post
+                $query = new WP_Query($args); // Executa a consulta com os argumentos definidos
+
+                if (have_posts()): while (have_posts()): the_post();
+                    $thumbnail = get_the_post_thumbnail(); // pega a thumb adicionada
+                    $data = get_the_date('d M Y'); // pega a data
+                    $titulo = get_the_title(); // titulo do post
                     ?>
                     <a href="">
                         <div class="post-news">
@@ -61,8 +67,17 @@ get_header(); ?>
                     </a>
                 <?php endwhile; endif; ?>
             </div>
+            <div class="pagination">
+                <?php
+                echo paginate_links(array(
+                    'total' => $query->max_num_pages,
+                    'next_text' => sprintf('%1$s <p></p>', __('»', 'text-domain')),
+                    'prev_text' => sprintf('<p></p> %1$s', __('«', 'text-domain'))
+                ));//mostra a paginação, a sequencia, e altera os valores padrões de texto do paginete_links
+                ?>
+            </div>
         </div>
     </div>
 </main>
-<?php get_footer(); ?>
 
+<?php get_footer(); ?>
