@@ -1,7 +1,7 @@
 /*
 Theme Name: NucleoGov Capacidade tecnica
 Author: Yago Prado
-Version: 1.6.1
+Version: 1.9
  */
 
 @font-face {
@@ -53,8 +53,7 @@ body,
 .post-news{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+
 }
 
 .header-title,
@@ -64,14 +63,28 @@ body,
     color: var(--color-text-primary);
 }
 
+.site-footer{
+    position: absolute;
+    bottom: 0;
+}
 .header-bar,
-.site-footer {
+.site-footer,
+.pagination a{
     background-color: var(--color-background-primary);
 
 }
 
 .site-header {
     background-color: var(--color-background-secondary);
+}
+
+.header-bar-nav:hover,
+.copyright:hover,
+.post-title p,
+.date-wrapper
+{
+    color: var(--color-text-secondary);
+
 }
 
 .header-main-title,
@@ -108,7 +121,6 @@ body,
 
 .header-bar-nav:hover,
 .copyright:hover {
-    color: var(--color-text-secondary);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition-duration: 0.3s;
 }
@@ -144,7 +156,6 @@ body,
 
 
 .post-title p {
-    color: var(--color-text-secondary);
     font-weight: bold;
     font-size: 20px;
 }
@@ -155,10 +166,7 @@ svg {
 .error-page{
     margin: 263px 0;
 }
-.post-thumb{
 
-
-}
 .posts-recent{
     display: flex;
     gap: 25px;
@@ -169,6 +177,7 @@ svg {
     overflow: hidden;
     box-shadow: 0 0 2px #00000057;
 }
+
 .post-thumb{
     display: flex;
 }
@@ -183,7 +192,6 @@ svg {
     padding-bottom: 7px;
     font-size: 13px;
     font-weight: 700;
-    color: var(--color-text-secondary);
     text-transform: uppercase;
 }
 
@@ -191,4 +199,18 @@ svg {
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.pagination{
+    display: flex;
+}
+
+.pagination a, .current{
+    padding: 20px;
+    color: white;
+    border-right: #fbfbfb63 1px solid
+}
+
+.current{
+    background-color: var(--color-text-secondary);
 }
