@@ -1,0 +1,137 @@
+/*
+Theme Name: NucleoGov Capacidade tecnica
+Author: Yago Prado
+Version: 1.9
+ */
+
+@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+
+:root {
+    --color-background: #F5F5F5;
+    --color-background-primary: #001A5B;
+    --color-background-secondary: #0B2A7A;
+    --color-text-primary: white;
+    --color-text-secondary: #69C549;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-background);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1195px;
+    margin: 0 auto;
+}
+
+footer,
+header,
+body,
+.container,
+.header-main-title,
+.header-bar,
+.footer-copyright
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-title,
+.header-subtitle,
+.copyright,
+.header-bar-nav {
+    color: var(--color-text-primary);
+}
+
+.site-footer{
+    position: absolute;
+    bottom: 0;
+}
+.header-bar,
+.site-footer
+{
+    background-color: var(--color-background-primary);
+
+}
+
+.site-header
+{
+    background-color: var(--color-background-secondary);
+}
+
+.header-bar-nav:hover,
+.copyright:hover
+{
+    color: var(--color-text-secondary);
+
+}
+
+.header-main-title,
+.footer-copyright
+{
+    align-items: center;
+    justify-content: center;
+}
+
+.site-header,
+.header-bar,
+.site-footer {
+    width: 100%;
+}
+
+.site-header {
+    margin-bottom: 35px;
+}
+
+.site-main {
+    margin: 35px 0;
+}
+
+.site-footer {
+    margin-top: 35px;
+}
+
+.header-bar-nav,
+.copyright {
+    font-size: 14px;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.header-bar-nav:hover,
+.copyright:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+}
+
+
+.header-main-title {
+    margin: 20px;
+
+}
+
+.header-title {
+    font-size: 55px;
+}
+
+.header-subtitle {
+    font-weight: lighter;
+}
+
