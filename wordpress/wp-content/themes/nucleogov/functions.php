@@ -20,3 +20,4 @@ function my_enqueue_block_assets() {
 	wp_enqueue_style('bloco-noticia', $css_dir . '/bloco-noticia.css', [ 'wp-edit-blocks' ]);
 }
 add_action('enqueue_block_editor_assets', 'my_enqueue_block_assets');
+
