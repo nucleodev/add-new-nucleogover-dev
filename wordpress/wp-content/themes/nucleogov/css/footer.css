@@ -1,0 +1,30 @@
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-background-primary);
+    margin-top: 35px;
+}
+
+.site-footer:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+}
+
+.site-footer .copyright {
+    color: var(--color-text-primary);
+    font-size: 14px;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.site-footer .copyright:hover {
+    color: var(--color-text-secondary);
+}

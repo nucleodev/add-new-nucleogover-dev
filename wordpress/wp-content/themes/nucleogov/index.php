@@ -10,7 +10,6 @@ get_header();
 <?php
 while (have_posts()) {
     the_post();
-
     // Exibe os blocos da página definida como modelo padrão
     if (function_exists('render_block')) {
         $content_blocks = parse_blocks(get_post_field('post_content', get_option('page_on_front')));
