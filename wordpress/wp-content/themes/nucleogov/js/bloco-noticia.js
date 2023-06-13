@@ -1,47 +1,50 @@
-(() => {
-    const el = window.wp.element.createElement;
-    const { registerBlockType } = window.wp.blocks;
-    const { RichText } = window.wp.blockEditor;
+(function () {
+    var el = wp.element.createElement;
+    var registerBlockType = wp.blocks.registerBlockType;
+    var ServerSideRender = wp.serverSideRender;
+    var InspectorControls = wp.blockEditor.InspectorControls;
+    var PanelBody = wp.components.PanelBody;
+    var RangeControl = wp.components.RangeControl;
 
     registerBlockType('nucleogov/news', {
         title: 'Noticias',
-        icon: 'welcome-write-blog',
-        category: 'layout',
+        icon: 'list-view',
+        category: 'common',
         attributes: {
-            content: {
-                type: 'array',
-                source: 'children',
-                selector: 'p',
+            postsToShow: {
+                type: 'number',
+                default: 4,
             },
         },
-        edit: myEdit,
-        save: mySave
+        edit: function (props) {
+            var postsToShow = props.attributes.postsToShow;
+            var setAttributes = props.setAttributes;
+
+            return [
+                el(InspectorControls, { key: 'controls' },
+                    el(PanelBody, { title: 'Configurações', initialOpen: true },
+                        el(RangeControl, {
+                            label: 'Posts para exibir',
+                            value: postsToShow,
+                            onChange: function (value) {
+                                setAttributes({ postsToShow: value });
+                            },
+                            min: 1,
+                            max: 10,
+                            step: 1,
+                        })
+                    )
+                ),
+                el(ServerSideRender, {
+                    key: 'server-side-render',
+                    block: 'nucleogov/news',
+                    attributes: props.attributes,
+                }),
+            ];
+        },
+        save: function () {
+            // O bloco de renderização é tratado no lado do servidor, então não há nada a ser salvo aqui.
+            return null;
+        },
     });
-
-    // what's rendered in admin
-    function myEdit(props) {
-        const atts = props.attributes;
-
-        return el(RichText, {
-            tagName: 'p',
-            className: props.className,
-            value: atts.content,
-
-            // Listener when the RichText is changed.
-            onChange: (value) => {
-                props.setAttributes({ content: value });
-            },
-        });
-    }
-
-    // what's saved in database and rendered in frontend
-    function mySave(props) {
-        const atts = props.attributes;
-
-        return el(RichText.Content, {
-            tagName: 'p',
-            value: atts.content,
-        });
-    }
 })();
-
