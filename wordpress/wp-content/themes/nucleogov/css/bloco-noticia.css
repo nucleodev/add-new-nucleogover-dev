@@ -1,3 +1,78 @@
-.post-title{
-    font-size: 15px;
+.site-main,
+.posts,
+.post-news {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-title p,
+.date-wrapper {
+    color: var(--color-text-secondary);
+}
+
+.site-main {
+    margin: 35px 0;
+}
+
+.post-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts {
+    gap: 40px;
+}
+
+.last-news {
+    display: flex;
+    align-items: center;
+}
+
+
+.post-title p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+svg {
+    width: 44px;
+}
+
+.posts-recent {
+    display: flex;
+    gap: 25px;
+}
+
+.post-news {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 2px #00000057;
+}
+
+.post-thumb {
+    display: flex;
+}
+
+.post-desc {
+    background: white;
+    padding: 20px;
+    height: 160px;
+}
+
+.date-wrapper {
+    padding-bottom: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.titulo-wrapper {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.post-wrapper{
+    display: flex;
+    justify-content: space-between;
 }

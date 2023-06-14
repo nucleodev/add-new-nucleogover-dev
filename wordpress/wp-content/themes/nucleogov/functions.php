@@ -41,17 +41,28 @@ function nucleogov_news_block_render($attributes) {
     if ($posts->have_posts()) {
         while ($posts->have_posts()) {
             $posts->the_post();
+            $thumbnail = get_the_post_thumbnail(); // pega a thumb adicionada
+            $data = get_the_date('d M Y'); // pega a data
+            $titulo = get_the_title(); // titulo do post
             ?>
-            <div class="post-wrapper">
-                <?php if (has_post_thumbnail()) { ?>
-                    <div class="post-thumbnail">
-                        <?php the_post_thumbnail('medium'); ?>
+            <div class="posts-recent">
+                <a href="">
+                    <div class="post-news">
+                        <div class="post-thumb">
+                            <?php if ($thumbnail): ?>
+                                <?php echo '<img width="280px" height="200px" src="' . $thumbnail; ?>
+                            <?php endif; ?>
+                        </div>
+                        <div class="post-desc">
+                            <div class="date-wrapper">
+                                <?php echo "$data"; ?>
+                            </div>
+                            <div class="titulo-wrapper">
+                                <?php echo "$titulo"; ?>
+                            </div>
+                        </div>
                     </div>
-                <?php } ?>
-                <div class="post-content">
-                    <div class="post-date"><?php echo get_the_date(); ?></div>
-                    <h2 class="post-title"><?php the_title(); ?></h2>
-                </div>
+                </a>
             </div>
             <?php
         }

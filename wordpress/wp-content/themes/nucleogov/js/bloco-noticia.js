@@ -13,7 +13,7 @@
         attributes: {
             postsToShow: {
                 type: 'number',
-                default: 4,
+                default: 5,
             },
         },
         edit: function (props) {
